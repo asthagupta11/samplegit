@@ -1,0 +1,56 @@
+<!-- <div class="container">
+<app-cockpit (servercreated)="onservercreated($event)" (blueprintcreated)="onblueprintcreated($event)" ></app-cockpit>
+  <hr>
+  <div class="row">
+    <div class="col-xs-12">
+      <app-server-element [element]='serverElement' *ngFor='let serverElement of serverElements'></app-server-element>
+    </div>
+    <p>blue in app</p>
+  </div>
+</div>
+<div class="container">
+    1. Create three new components: GameControl, Odd and Even <br/>
+    2. The GameControl Component should have buttons to start and stop the game<br/>
+    3. When starting the game, an event (holding a incrementing number) should get emitted each second (ref = setInterval())<br/>
+    4. The event should be listenable from outside the component<br/>
+    5. When stopping the game, no more events should get emitted (clearInterval(ref))<br/>
+    6. A new Odd component should get created for every odd number emitted, the same should happen for the Even Component (on even numbers)<br/>
+    7. Simply output Odd - NUMBER or Even - NUMBER in the two components <br/>
+    8. Style the element (e.g. paragraph) holding your output text differently in both components<br/><br/>
+<div class="row">
+  <div class="col-xs-12">
+    <app-game (firedEvent)="onFired($event)"></app-game>
+  </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+      <app-odd *ngFor="let x of oddnumbers" [number]="x"></app-odd>
+    </div>
+    <div class="col-xs-12">
+        <app-even *ngFor="let x of evennumbers" [number]="x"></app-even>
+      </div>
+  </div>
+
+</div> -->
+
+<!-- <div class="container">
+  <div class="row">
+      <div class="col-xs-12 col-md-8 col-md-offset-2">
+        <app-new-account></app-new-account><hr/>
+
+        <app-account
+        *ngFor="let acc of accounts,let i = index"
+        [account]="acc"
+        [id]="i"  >
+      </app-account>
+      </div>
+  </div>
+</div> -->
+
+<div class="container">
+  <div class="row">
+    <app-active-users></app-active-users>
+    <app-inactive-users></app-inactive-users>
+  </div>
+</div>
